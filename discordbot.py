@@ -16,21 +16,9 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-
+    
 @bot.command()
-async def tasu(ctx, a: int, b: int):
-    await ctx.send(a+b)
-
-@bot.command()
-async def kakeru(ctx, a: int, b: int):
-    await ctx.send(a*b)
-
-@bot.command()
-async def greet(ctx):
-    await ctx.send(":smiley: :wave: Hello, there!")
-
-@bot.cmmands()
-async def cat(ctx):
-    await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+async def pinga(ctx):
+    await ctx.send('pong')
     
 bot.run(token)
